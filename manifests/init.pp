@@ -17,7 +17,6 @@ class rsyslog (
 
   service { "rsyslog":
     ensure => "running",
-    enable => true,
-    require => Service["ntp"]
+    enable => true
   }
 }

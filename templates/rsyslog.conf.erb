@@ -28,9 +28,9 @@ $ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
 # not useful and an extreme performance hit
 #$ActionFileEnableSync on
 
+$ModLoad imfile
 # Include all config files in /etc/rsyslog.d/
 $IncludeConfig /etc/rsyslog.d/*.conf
-
 
 #### RULES ####
 
